@@ -5,7 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener('click', () => {
       const qName = button.dataset.question;
       console.log(`Ответ для ${qName} сохранён`);
-      // здесь можно будет добавить сохранение в localStorage
     });
   });
+
+  // обработка кнопки "Закончить тест"
+  const finishBtn = document.getElementById('finish-btn');
+  if (finishBtn) {
+    finishBtn.addEventListener('click', () => {
+      window.location.href = "result.html"; // сюда можно подставить любую страницу
+    });
+  }
 });

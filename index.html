@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="main.css">
   <script src="app.js" defer></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <title>очень сложный тест</title>
 </head>
 <body>
@@ -13,50 +16,55 @@
   <div class="question">
     <p>1. Лучший университет мира</p>
     <label><input type="radio" name="q1" value="ДГТУ"> ДГТУ</label><br>
-    <label><input type="radio" name="q1" value="МГУ"> МГУ</label><br>
-    <label><input type="radio" name="q1" value="СПбГУ"> СПбГУ</label><br><br>
+    <label><input type="radio" name="q1" value="МГУ"> ДГТУ</label><br>
+    <label><input type="radio" name="q1" value="СПбГУ"> ДГТУ</label><br><br>
 
   </div>
 
   <!-- 2. с выбором -->
   <div class="question">
-    <p>2. Сколько окон в главном корпусе?</p>
-    <label><input type="radio" name="q2" value="много"> много</label><br>
-    <label><input type="radio" name="q2" value="немало"> немало</label><br>
-    <label><input type="radio" name="q2" value="дофига"> дофига</label><br><br>
+    <p>2. Сколько лет университету ?</p>
+    <label><input type="radio" name="q2" value="много"> 95</label><br>
+    <label><input type="radio" name="q2" value="немало"> 100</label><br>
+    <label><input type="radio" name="q2" value="дофига"> 90</label><br><br>
 
   </div>
 
   <!-- 3. с выбором -->
   <div class="question">
-    <p>3. Лучший мем 2025</p>
+    <p>
+    $$
+      I(x) = \int \frac{\exp\!\big(e^{x^2} + \sin(x^3)\big)\,\sqrt[3]{\ln(1+x^2)}\;\cos\!\big(e^{x}\big)}
+      {x\sqrt{1+\sin^2(x)} + e^{-x^2}} \, dx
+    $$
+    </p>
     <label><input type="radio" name="q3" value="такси"> МАМА ВЫЗЫВАЙ ТАКСИ</label><br>
-    <label><input type="radio" name="q3" value="трл"> ТРАЛЕЛО ТРАЛАЛА</label><br>
-    <label><input type="radio" name="q3" value="тун"> ТУН ТУН ТУН САХУР</label><br><br>
+    <label><input type="radio" name="q3" value="трл"> ОТЧИСЛЯЮ</label><br>
+    <label><input type="radio" name="q3" value="тун"> Брэйнрот</label><br><br>
 
   </div>
 
   <!-- 4. поле ввода -->
   <div class="question">
-    <p>4. Вы любите свою маму?</p>
+    <p>4. Можно ли пропускать пары ?</p>
     <input type="text" name="q4" placeholder="Ваш ответ"><br><br>
  
   </div>
 
   <!-- 5. с выбором -->
   <div class="question">
-    <p>5. Любимый цвет</p>
-    <label><input type="radio" name="q5" value="красный"> Красный</label><br>
-    <label><input type="radio" name="q5" value="синий"> Синий</label><br>
-    <label><input type="radio" name="q5" value="зелёный"> Зелёный</label><br><br>
+    <p>5. Сколько углов у треугольника ?</p>
+    <label><input type="radio" name="q5" value="красный"> 3</label><br>
+    <label><input type="radio" name="q5" value="синий"> 4(6)</label><br>
+    <label><input type="radio" name="q5" value="зелёный"> 1</label><br><br>
   </div>
 
   <!-- 6. с выбором -->
   <div class="question">
-    <p>6. Любимая еда</p>
-    <label><input type="radio" name="q6" value="пицца"> Пицца</label><br>
-    <label><input type="radio" name="q6" value="суши"> Суши</label><br>
-    <label><input type="radio" name="q6" value="борщ"> Борщ</label><br><br>
+    <p>6. Кто является лучшим культоргом факультета</p>
+    <label><input type="radio" name="q6" value="пицца"> Ольга Тунёва</label><br>
+    <label><input type="radio" name="q6" value="суши">  Оля Тунёва</label><br>
+    <label><input type="radio" name="q6" value="борщ">  Олечка Тунёва</label><br><br>
 
   </div>
 
@@ -88,6 +96,10 @@
     <p>10. Ваши планы на выходные</p>
     <input type="text" name="q10" placeholder="Ваш ответ"><br><br>
 
+  </div>
+
+  <div class="finish">
+    <button id="finish-btn">Закончить тест</button>
   </div>
 
 </body>
